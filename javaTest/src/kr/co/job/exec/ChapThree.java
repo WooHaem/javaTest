@@ -6,14 +6,14 @@ public class ChapThree {
 		System.out.println("--------------------------------3-1");
 		int x = 2;
 		int y = 5;
-		char c = 'A'; // 'A'ÀÇ ¹®ÀÚÄÚµå´Â 65
+		char c = 'A'; // 'A'ì˜ ë¬¸ìì½”ë“œëŠ” 65
 		
 		System.out.println(1 + x << 33);
 		System.out.println(y >= 5 || x < 0 && x > 2);
 		System.out.println(y += 10 - x++);
-		System.out.println(x += 2); // ¹Ù·Î À§¿¡ ++·Î ÀÎÇØ x°ªÀÌ 2¿¡¼­ 3ÀÌ µÊ.
+		System.out.println(x += 2); // ë°”ë¡œ ìœ„ì— ++ë¡œ ì¸í•´ xê°’ì´ 2ì—ì„œ 3ì´ ë¨.
 		System.out.println( !('A' <= c && c <= 'Z') );
-		System.out.println('C'-c); // ¹®ÀÚ°¡ ÀÖ´Â°ÍÀº -+ °¡ »ğÀÔµÇ´Â ¼ø°£ ¾Æ½ºÅ°ÄÚµå·Î º¯È¯.
+		System.out.println('C'-c); // ë¬¸ìê°€ ìˆëŠ”ê²ƒì€ -+ ê°€ ì‚½ì…ë˜ëŠ” ìˆœê°„ ì•„ìŠ¤í‚¤ì½”ë“œë¡œ ë³€í™˜.
 		System.out.println('5'-'0');
 		System.out.println(c+1);
 		System.out.println(++c);
@@ -22,16 +22,16 @@ public class ChapThree {
 		
 		
 		System.out.println("--------------------------------3-2");
-		int numOfApples = 123;	// »ç°úÀÇ °³¼ö
-		int sizeOfBucket = 10;	// ¹Ù±¸´ÏÀÇ Å©±â (¹Ù±¸´Ï¿¡ ´ãÀ» ¼ö ÀÖ´Â »ç°úÀÇ °³¼ö)
-		int numOfBucket = numOfApples / sizeOfBucket + ( numOfApples%sizeOfBucket > 0 ? 1:0);	//¸ğµç »ç°ú¸¦ ´ã´Âµ¥ ÇÊ¿äÇÑ ¹Ù±¸´ÏÀÇ ¼ö
+		int numOfApples = 123;	// ì‚¬ê³¼ì˜ ê°œìˆ˜
+		int sizeOfBucket = 10;	// ë°”êµ¬ë‹ˆì˜ í¬ê¸° (ë°”êµ¬ë‹ˆì— ë‹´ì„ ìˆ˜ ìˆëŠ” ì‚¬ê³¼ì˜ ê°œìˆ˜)
+		int numOfBucket = numOfApples / sizeOfBucket + ( numOfApples%sizeOfBucket > 0 ? 1:0);	//ëª¨ë“  ì‚¬ê³¼ë¥¼ ë‹´ëŠ”ë° í•„ìš”í•œ ë°”êµ¬ë‹ˆì˜ ìˆ˜
 		
-		System.out.println("ÇÊ¿äÇÑ ¹Ù±¸´ÏÀÇ ¼ö : " + numOfBucket);
+		System.out.println("í•„ìš”í•œ ë°”êµ¬ë‹ˆì˜ ìˆ˜ : " + numOfBucket);
 		
 		
 		System.out.println("--------------------------------3-3");
 		int num = 10;
-		System.out.println(num > 0 ? "¾ç¼ö":(num < 0 ? "À½¼ö":0));
+		System.out.println(num > 0 ? "ì–‘ìˆ˜":(num < 0 ? "ìŒìˆ˜":0));
 		
 		
 		System.out.println("--------------------------------3-4");
@@ -59,7 +59,7 @@ public class ChapThree {
 		
 		
 		System.out.println("--------------------------------3-8");	
-		byte a = 10;	// ASKII ÄÚµå = 7ºñÆ® (0~127)
+		byte a = 10;	// ASKII ì½”ë“œ = 7ë¹„íŠ¸ (0~127)
 		byte b = 20;
 		int c_1 = a + b;
 		
@@ -83,7 +83,7 @@ public class ChapThree {
 
 		System.out.println("--------------------------------3-9");
 		char ch_1 = 'z';
-		boolean b_1 = ('a' <= ch && 'z' >= ch) || ('A' <= ch && 'Z' >= ch) || ('0' <= ch && '9' >= ch); // <= 48±×¸®°í 57
+		boolean b_1 = ('a' <= ch && 'z' >= ch) || ('A' <= ch && 'Z' >= ch) || ('0' <= ch && '9' >= ch); // <= 48ê·¸ë¦¬ê³  57
 		
 		System.out.println(b_1);
 		

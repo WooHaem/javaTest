@@ -11,28 +11,28 @@ public class SwitchTest01 {
 		
 		while(done) {	
 			System.out.println("==========[ Menu ]===========");
-			System.out.println(" 1.    2.    3.    99.   Á¾·á.");
+			System.out.println(" 1.    2.    3.    99.   ì¢…ë£Œ.");
 			System.out.println("=============================");
 			
-			System.out.print("¼ıÀÚ ÀÔ·Â : ");
+			System.out.print("ìˆ«ì ì…ë ¥ : ");
 			num = scan.nextInt();
 			
 			switch (num) {
 			case 1 :
-				System.out.println("1ÀÔ´Ï´Ù.");
+				System.out.println("1ì…ë‹ˆë‹¤.");
 				break;
 			case 2 : 
-				System.out.println("2ÀÔ´Ï´Ù.");
+				System.out.println("2ì…ë‹ˆë‹¤.");
 				break;
 			case 3 :
-				System.out.println("3ÀÔ´Ï´Ù.");
+				System.out.println("3ì…ë‹ˆë‹¤.");
 				break;
 			case 99 :
-				System.out.println("¹İº¹À» Á¾·áÇÕ´Ï´Ù.");
+				System.out.println("ë°˜ë³µì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 				done = false;
-				// return; ´Ù¸¥ ¹æ¹ı (À¥¿ë. ÇÔ¼ö¿ëx)
+				// return; ë‹¤ë¥¸ ë°©ë²• (ì›¹ìš©. í•¨ìˆ˜ìš©x)
 			default :
-				System.out.println("´©±¸³Ä ³Í??");
+				System.out.println("ëˆ„êµ¬ëƒ ë„Œ??");
 				break;
 			}
 		}

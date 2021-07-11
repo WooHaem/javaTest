@@ -1,5 +1,5 @@
 /*
- * µÎ ¼ö¸¦ Å°º¸µå·Î ÀÔ·Â¹Ş¾Æ¼­ µÎ ¼öÀÇ °ªÀ» ¼­·Î ±³È¯ÇÏÀÚ
+ * ë‘ ìˆ˜ë¥¼ í‚¤ë³´ë“œë¡œ ì…ë ¥ë°›ì•„ì„œ ë‘ ìˆ˜ì˜ ê°’ì„ ì„œë¡œ êµí™˜í•˜ì
  */
 
 package kr.co.job.check;
@@ -11,27 +11,27 @@ public class CheckingTest02 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
-		// ¼±¾ğ  ¡Ø º¯¼ö ¸í º¯°æÇÏ±â a,b,c ÀÚÁ¦
+		// ì„ ì–¸  â€» ë³€ìˆ˜ ëª… ë³€ê²½í•˜ê¸° a,b,c ìì œ
 		int num1, num2, temp = 0;
 		
-		// ÀÔ·Â
-		System.out.print("Ã¹¹øÂ° ¼ö : ");
+		// ì…ë ¥
+		System.out.print("ì²«ë²ˆì§¸ ìˆ˜ : ");
 		num1 = scan.nextInt();
 		
-		System.out.print("µÎ¹øÂ° ¼ö : ");
+		System.out.print("ë‘ë²ˆì§¸ ìˆ˜ : ");
 		num2 = scan.nextInt();
 		
 		System.out.println(num1 + " / " + num2);
 		System.out.println("");
-		System.out.println("----±³È¯Áß----");
+		System.out.println("----êµí™˜ì¤‘----");
 		System.out.println("");
 		
-		// Ã³¸® : swap
+		// ì²˜ë¦¬ : swap
 		temp = num1;
 		num1 = num2;
 		num2 = temp;	
 		
-		// Ãâ·Â
+		// ì¶œë ¥
 		System.out.println(num1 + " / " + num2);
 
 	}

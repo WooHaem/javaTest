@@ -5,16 +5,16 @@ import java.util.Scanner;
 public class ForTest06 {
 
 	public static void main(String[] args) {
-		System.out.println("========ÁÙÄ­ ¶Ç´Â Çà¿­¿¡ ´ëÇÏ¿©========");
-		for (int i=1; i<=4; i++) { //ÁÙ
+		System.out.println("========ì¤„ì¹¸ ë˜ëŠ” í–‰ì—´ì— ëŒ€í•˜ì—¬========");
+		for (int i=1; i<=4; i++) { //ì¤„
 			
-			for (int j=1; j<=i; j++) { //Ä­ j : º°ÀÇ °³¼ö 
+			for (int j=1; j<=i; j++) { //ì¹¸ j : ë³„ì˜ ê°œìˆ˜ 
 				System.out.print("*");
 			}
 			System.out.println();
 		}
 		
-		// ³­¼ö ¹ß»ı : Math.random() = 0~0.9999ÀÇ ÀÓÀÌÀÇ ¼ö¸¦ "ÇÏ³ª¸¸" ¹ß»ı½ÃÅ´
+		// ë‚œìˆ˜ ë°œìƒ : Math.random() = 0~0.9999ì˜ ì„ì´ì˜ ìˆ˜ë¥¼ "í•˜ë‚˜ë§Œ" ë°œìƒì‹œí‚´
 		System.out.println(Math.random());
 		System.out.println(Math.random());
 		System.out.println(Math.random());
@@ -23,18 +23,18 @@ public class ForTest06 {
 		System.out.println(Math.random());
 
 		int num =0;
-		num = (int)(Math.random()*10); // 0 ~ 9 ±îÁöÀÇ ¼ö°¡ ³ª¿Â´Ù. (10À» °öÇØ 1ÀÇÀÚ¸®¼ö·Î º¯È¯µÇ¾ú±â ¶§¹®)
+		num = (int)(Math.random()*10); // 0 ~ 9 ê¹Œì§€ì˜ ìˆ˜ê°€ ë‚˜ì˜¨ë‹¤. (10ì„ ê³±í•´ 1ì˜ìë¦¬ìˆ˜ë¡œ ë³€í™˜ë˜ì—ˆê¸° ë•Œë¬¸)
 		System.out.println(num);
 		
-		// 1~10±îÁöÀÇ ¼ö ¹ß»ı½ÃÅ°±â
-		num = (int)(Math.random()*10) + 1; // 0 ~ 9 ±îÁö´Ï±î ÃÖ´ë¼ö 9¿¡ +1À» ÇÏ¸é 10±îÁö ³ª¿Â´Ù.
+		// 1~10ê¹Œì§€ì˜ ìˆ˜ ë°œìƒì‹œí‚¤ê¸°
+		num = (int)(Math.random()*10) + 1; // 0 ~ 9 ê¹Œì§€ë‹ˆê¹Œ ìµœëŒ€ìˆ˜ 9ì— +1ì„ í•˜ë©´ 10ê¹Œì§€ ë‚˜ì˜¨ë‹¤.
 		System.out.println(num);
 		
-		// 1~45±îÁöÀÇ ¼ö ¹ß»ı
-		num = (int)(Math.random()*45) + 1; // Á¦ÀÏ Å« °ªÀº * °ö¼À¿¡ ÀÔ·ÂÇØÁØ´Ù. / * 45´Â ¹üÀ§ (45°¡ÁöÀÇ ¼ö¸¦ ¶æÇÔ) 
+		// 1~45ê¹Œì§€ì˜ ìˆ˜ ë°œìƒ
+		num = (int)(Math.random()*45) + 1; // ì œì¼ í° ê°’ì€ * ê³±ì…ˆì— ì…ë ¥í•´ì¤€ë‹¤. / * 45ëŠ” ë²”ìœ„ (45ê°€ì§€ì˜ ìˆ˜ë¥¼ ëœ»í•¨) 
 		System.out.println(num);
 		
-		// 11~13»çÀÌÀÇ ¼ö ¹ß»ı
+		// 11~13ì‚¬ì´ì˜ ìˆ˜ ë°œìƒ
 		for (int i=1; i<=3; i++) {
 			num = (int)(Math.random() * 3) + 11;
 			System.out.println(num);

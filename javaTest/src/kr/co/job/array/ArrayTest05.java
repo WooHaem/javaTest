@@ -5,19 +5,19 @@ import java.util.Scanner;
 public class ArrayTest05 {
 
 	public static void main(String[] args) {
-		final int SIZE = 5;	//final °íÁ¤ : º¯°æºÒ°¡
+		final int SIZE = 5;	//final ê³ ì • : ë³€ê²½ë¶ˆê°€
 		String[] name = new String[SIZE];
 		Scanner scan = new Scanner(System.in);
 		
-		// ÀÌ¸§ ÀÔ·Â¹Ş±â
+		// ì´ë¦„ ì…ë ¥ë°›ê¸°
 		for (int i=0; i<SIZE; i++) {
-			System.out.print("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+			System.out.print("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 			name[i] = scan.next();
 		}
 		
-		// ¹è¿­°ª ÇÏ³ª Ãâ·ÂÇÏ±â -(·£´ı)
+		// ë°°ì—´ê°’ í•˜ë‚˜ ì¶œë ¥í•˜ê¸° -(ëœë¤)
 		int n = (int)(Math.random()*SIZE);
-		System.out.println("ÀÓÀÇÀÇ ¹è¿­°ª Ãâ·Â : " + name[n]);
+		System.out.println("ì„ì˜ì˜ ë°°ì—´ê°’ ì¶œë ¥ : " + name[n]);
 
 	}
 

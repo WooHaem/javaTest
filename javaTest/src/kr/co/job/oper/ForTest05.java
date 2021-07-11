@@ -1,5 +1,5 @@
-/* ´Ù¾çÇÑ for¹®µé
- * 1. ½ÃÀÛ°ª ³¡°ª±îÁö ÀÔ·Â¹Ş¾Æ ¸ğµç È¦¼öÀÇ ÇÕ
+/* ë‹¤ì–‘í•œ forë¬¸ë“¤
+ * 1. ì‹œì‘ê°’ ëê°’ê¹Œì§€ ì…ë ¥ë°›ì•„ ëª¨ë“  í™€ìˆ˜ì˜ í•©
  */
 package kr.co.job.oper;
 
@@ -10,20 +10,20 @@ public class ForTest05 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
-		//¼±¾ğ
+		//ì„ ì–¸
 		int StartValue, LastValue;
 		int sum = 0;
 		
-		System.out.print("½ÃÀÛ°ª ÀÔ·Â : ");
+		System.out.print("ì‹œì‘ê°’ ì…ë ¥ : ");
 		StartValue = scan.nextInt();
 		
-		System.out.print("³¡°ª ÀÔ·Â : ");
+		System.out.print("ëê°’ ì…ë ¥ : ");
 		LastValue = scan.nextInt();
 		
 		
-		//Ã³¸® : ¸ğµç È¦¼ö¸¸ Ãâ·Â
+		//ì²˜ë¦¬ : ëª¨ë“  í™€ìˆ˜ë§Œ ì¶œë ¥
 		for (int i=StartValue; i<=LastValue; i++) {
-			if (i%2 != 0) { // Â¦¼öÀÏ °æ¿ì. i%2 != 0
+			if (i%2 != 0) { // ì§ìˆ˜ì¼ ê²½ìš°. i%2 != 0
 				System.out.println(i + " ");
 			}
 		}
@@ -31,20 +31,20 @@ public class ForTest05 {
 		
 		System.out.println("=======================================");
 		
-		// 1+2+3...+10 = 55 Ãâ·ÂÇØº¸±â
+		// 1+2+3...+10 = 55 ì¶œë ¥í•´ë³´ê¸°
 		for(int i=1; i<=10; i++) {
 			sum += i;
 			System.out.print(i);
-			if (i != 10) { // 10 µÚ¿¡´Â °á°ú = ÀÌ ³ª¿Í¾ßÇÔ. +±âÈ£´Â »ı·«½ÃÄÑ¾ß ÇÏ±â ¶§¹®¿¡ if ¹®À¸·Î Á¦¾î.
+			if (i != 10) { // 10 ë’¤ì—ëŠ” ê²°ê³¼ = ì´ ë‚˜ì™€ì•¼í•¨. +ê¸°í˜¸ëŠ” ìƒëµì‹œì¼œì•¼ í•˜ê¸° ë•Œë¬¸ì— if ë¬¸ìœ¼ë¡œ ì œì–´.
 				System.out.print("+");	
 			} else { 
 				System.out.print("");
 			}	
 		}
-		System.out.println("=" + sum); // °á°ú°ª Ãâ·ÂÀº for¹® ¹Û¿¡ À§Ä¡.
+		System.out.println("=" + sum); // ê²°ê³¼ê°’ ì¶œë ¥ì€ forë¬¸ ë°–ì— ìœ„ì¹˜.
 		
 		
-		//Á¾·á
+		//ì¢…ë£Œ
 		System.out.println("Program End.");
 		scan.close();
 

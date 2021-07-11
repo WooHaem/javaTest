@@ -5,28 +5,28 @@ import java.util.Arrays;
 public class ArrayTest01 {
 
 	public static void main(String[] args) {
-		// ¹è¿­ or ¸®½ºÆ® : °°Àº Å¸ÀÔÀÇ º¯¼ö¸¦ ÇÏ³ªÀÇ ¹­À½À¸·Î ´Ù·ç´Â 
-//		int[] score;				// ¼±¾ğ
-//		score = new int[5];			// »ı¼º
-		int[] score = new int[5];	// ¼±¾ğ, »ı¼º µ¿½Ã¿¡
+		// ë°°ì—´ or ë¦¬ìŠ¤íŠ¸ : ê°™ì€ íƒ€ì…ì˜ ë³€ìˆ˜ë¥¼ í•˜ë‚˜ì˜ ë¬¶ìŒìœ¼ë¡œ ë‹¤ë£¨ëŠ” 
+//		int[] score;				// ì„ ì–¸
+//		score = new int[5];			// ìƒì„±
+		int[] score = new int[5];	// ì„ ì–¸, ìƒì„± ë™ì‹œì—
 		
-		// ¹è¿­ÀÇ ÃÊ±âÈ­ ÀÛ¾÷
+		// ë°°ì—´ì˜ ì´ˆê¸°í™” ì‘ì—…
 		for (int i=0; i<score.length; i++) {
 			score[i] = 0;
 		}
 		
-		// ¹è¿­¿¡ ·£´ıÀ¸·Î 1~100±îÁöÀÇ ¼ö¸¦ ´ëÀÔÇÏ±â.
+		// ë°°ì—´ì— ëœë¤ìœ¼ë¡œ 1~100ê¹Œì§€ì˜ ìˆ˜ë¥¼ ëŒ€ì…í•˜ê¸°.
 		for (int i=0; i<score.length; i++) {
 			score[i] = (int)(Math.random()*100) + 1;
-			//System.out.println("score[" + i + "] = " + score[i]);	// for¹® ¾È¿¡¼­ Ãâ·Â
+			//System.out.println("score[" + i + "] = " + score[i]);	// forë¬¸ ì•ˆì—ì„œ ì¶œë ¥
 		}
 		
-		// for¹® ¹Û¿¡¼­ Ãâ·ÂÇØº¸±â.
+		// forë¬¸ ë°–ì—ì„œ ì¶œë ¥í•´ë³´ê¸°.
 		for (int i=0; i<score.length; i++) {
 			System.out.println("score[" + i + "] = " + score[i]);
 		}
 		
-		// ´Ü¼ø ¹è¿­ÀÇ °ªÀ» Ãâ·Â
+		// ë‹¨ìˆœ ë°°ì—´ì˜ ê°’ì„ ì¶œë ¥
 		System.out.println("------------------------");
 		System.out.println(Arrays.toString(score));
 		

@@ -1,6 +1,6 @@
-/* µÎ ¼ö¸¦ ÀÔ·Â¹Ş¾Æ¼­ ´õÇÏ±â, »©±â, °öÇÏ±â, ³ª´©±â¸¦ ±¸ÇÏ´Â ¸Ş¼Òµå
+/* ë‘ ìˆ˜ë¥¼ ì…ë ¥ë°›ì•„ì„œ ë”í•˜ê¸°, ë¹¼ê¸°, ê³±í•˜ê¸°, ë‚˜ëˆ„ê¸°ë¥¼ êµ¬í•˜ëŠ” ë©”ì†Œë“œ
  * void plusV(int n1, int n2);
- * minusV(), mulV(), divV()		=> ¸Ş¼Òµå ÀÌ¸§
+ * minusV(), mulV(), divV()		=> ë©”ì†Œë“œ ì´ë¦„
  */
 package kr.co.job.func;
 
@@ -8,26 +8,26 @@ public class ExamFunction02 {
 
 
 	public static void main(String[] args) {
-		// 3,5ÀÇ ÇÕ ±¸ÇÏ±â
-		int plus = plusV(3, 5);	// ÇÔ¼ö¿¡¼­ returnÀ¸·Î º¸³½ °ªÀ» µ¿ÀÏÇÑ µ¥ÀÌÅÍÅ¸ÀÔÀ¸·Î ¹Ù²Ù¾î ¼±¾ğÇØÁØ´Ù.
-		System.out.println("3°ú 5ÀÇ ÇÕ : " + plus);	
-		// 3,10ÀÇ »¬¼À
+		// 3,5ì˜ í•© êµ¬í•˜ê¸°
+		int plus = plusV(3, 5);	// í•¨ìˆ˜ì—ì„œ returnìœ¼ë¡œ ë³´ë‚¸ ê°’ì„ ë™ì¼í•œ ë°ì´í„°íƒ€ì…ìœ¼ë¡œ ë°”ê¾¸ì–´ ì„ ì–¸í•´ì¤€ë‹¤.
+		System.out.println("3ê³¼ 5ì˜ í•© : " + plus);	
+		// 3,10ì˜ ëº„ì…ˆ
 		int minus = minusV(3, 10);
-		System.out.println("3°ú 5ÀÇ »¬ : " + minus);
-		// 5,4ÀÇ °ö¼À
+		System.out.println("3ê³¼ 5ì˜ ëº„ : " + minus);
+		// 5,4ì˜ ê³±ì…ˆ
 		int multiple = mulV(5, 4);
-		System.out.println("3°ú 5ÀÇ °ö : " + multiple);
-		// 2,8ÀÇ ³ª´°¼À
+		System.out.println("3ê³¼ 5ì˜ ê³± : " + multiple);
+		// 2,8ì˜ ë‚˜ëˆ—ì…ˆ
 		int division = divV(2, 8);
-		System.out.println("3°ú 5ÀÇ ³ª : " + division);
+		System.out.println("3ê³¼ 5ì˜ ë‚˜ : " + division);
 		
 	}
 
-	private static int divV(int i, int j) {		// private static µ¥ÀÌÅÍÅ¸ÀÔ ÇÔ¼ö()
+	private static int divV(int i, int j) {		// private static ë°ì´í„°íƒ€ì… í•¨ìˆ˜()
 		int sum = i / j;
-		//System.out.println(i + "¡À" + j + " = " + sum);
+		//System.out.println(i + "Ã·" + j + " = " + sum);
 		//System.out.println("");
-		return i / j;	// ÇÔ¼ö¹ÛÀ¸·Î °á°ú°ªÀ» Ãâ·ÂÇÏ´Â ¹æ¹ı. => returnÀº ¹«Á¶°Ç ÇÏ³ª µÎ°³ÀÌ»ó ¾ÈµÊ.
+		return i / j;	// í•¨ìˆ˜ë°–ìœ¼ë¡œ ê²°ê³¼ê°’ì„ ì¶œë ¥í•˜ëŠ” ë°©ë²•. => returnì€ ë¬´ì¡°ê±´ í•˜ë‚˜ ë‘ê°œì´ìƒ ì•ˆë¨.
 	}
 
 	private static int mulV(int i, int j) {

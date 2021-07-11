@@ -1,6 +1,6 @@
-/* [¸Ş¼Òµå È£Ãâ]
- * ±â´É : Æ¯Á¤¹®ÀÚ¸¦ È½¼ö¸¸Å­ Ãâ·ÂÇÏ´Â ¸Ş¼Òµå ¸¸µé±â
- * void printCharacter (char ch, int num); ¸Ş¼Òµå ¿øÇü
+/* [ë©”ì†Œë“œ í˜¸ì¶œ]
+ * ê¸°ëŠ¥ : íŠ¹ì •ë¬¸ìë¥¼ íšŸìˆ˜ë§Œí¼ ì¶œë ¥í•˜ëŠ” ë©”ì†Œë“œ ë§Œë“¤ê¸°
+ * void printCharacter (char ch, int num); ë©”ì†Œë“œ ì›í˜•
  * 
  */
 package kr.co.job.func;
@@ -12,30 +12,30 @@ public class ExamMethod01 {
 		printCharacter('*', 3);
 		printCharacter('$', 10);
 		
-		// "hello"´Â ¹®ÀÚ¿­ÀÌ¹Ç·Î ÇÔ¼öÀÇ Å¸ÀÔÀ» StringÀ¸·Î º¯È¯ (Ã¹¹øÂ° ÇÔ¼ö)
+		// "hello"ëŠ” ë¬¸ìì—´ì´ë¯€ë¡œ í•¨ìˆ˜ì˜ íƒ€ì…ì„ Stringìœ¼ë¡œ ë³€í™˜ (ì²«ë²ˆì§¸ í•¨ìˆ˜)
 		printCharacter("hello", (int)(Math.random() * 10) + 1);
 	}
 	
-	// Æ¯Á¤ ¹®ÀÚ¿­À» È½¼ö¸¸Å­ ¹İº¹ÇÏ´Â ¸Ş¼Òµå
+	// íŠ¹ì • ë¬¸ìì—´ì„ íšŸìˆ˜ë§Œí¼ ë°˜ë³µí•˜ëŠ” ë©”ì†Œë“œ
 	private static void printCharacter(String str, int num) {
-		System.out.println("¹®ÀÚ¿­ ¹İº¹ ÀÓ¹« ½ÃÀÛ");
+		System.out.println("ë¬¸ìì—´ ë°˜ë³µ ì„ë¬´ ì‹œì‘");
 		for (int i=0; i<=num; i++) {
 			System.out.print(str + "\n");
 			if (i == num) {
 				System.out.print(str);
 			}
 		}
-		System.out.println("\n¹®ÀÚ¿­ ¹İº¹ ÀÓ¹« Á¾·á");
+		System.out.println("\në¬¸ìì—´ ë°˜ë³µ ì„ë¬´ ì¢…ë£Œ");
 		System.out.println("");
 		
 	}
 	
 	private static void printCharacter(char ch, int num) {
-		System.out.println("¹İº¹Ãâ·Â ÀÓ¹« ½ÃÀÛ");
+		System.out.println("ë°˜ë³µì¶œë ¥ ì„ë¬´ ì‹œì‘");
 		for (int i=0; i<=num; i++) {
 			System.out.print(ch);
 		}
-		System.out.println("\n¹İº¹Ãâ·Â ÀÓ¹« Á¾·á");
+		System.out.println("\në°˜ë³µì¶œë ¥ ì„ë¬´ ì¢…ë£Œ");
 		System.out.println("");
 		
 	}

@@ -6,116 +6,116 @@ public class exam02 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		int[] drinkPrice, drinkGa;	// drinkGa (Àç°í)
+		int[] drinkPrice, drinkGa;	// drinkGa (ì¬ê³ )
 		String[] drinkName;
 		
 		boolean done = true;
 		int coin = 0, num = 0, choose = 0;
 		
-// 1. À½·áÀÇ °¡°İ°ú Àç°í ÀÌ¸§À» Á¤ÇØÁØ´Ù.
-		drinkPrice = new int[] {500, 700, 1000};					//°¡°İ
-		drinkGa = new int[] {5, 4, 3};							//Àç°í
-		drinkName = new String[] {"Äİ¶ó", "»çÀÌ´Ù", "Ä¿ÇÇ"};		//ÀÌ¸§
+// 1. ìŒë£Œì˜ ê°€ê²©ê³¼ ì¬ê³  ì´ë¦„ì„ ì •í•´ì¤€ë‹¤.
+		drinkPrice = new int[] {500, 700, 1000};					//ê°€ê²©
+		drinkGa = new int[] {5, 4, 3};							//ì¬ê³ 
+		drinkName = new String[] {"ì½œë¼", "ì‚¬ì´ë‹¤", "ì»¤í”¼"};		//ì´ë¦„
 		
-// 2. ÅõÀÔÇÒ ±İ¾×À» ÀÔ·ÂÇÑ´Ù.
-		System.out.print("µ¿ÀüÀ» ³Ö¾îÁÖ¼¼¿ä : ");
+// 2. íˆ¬ì…í•  ê¸ˆì•¡ì„ ì…ë ¥í•œë‹¤.
+		System.out.print("ë™ì „ì„ ë„£ì–´ì£¼ì„¸ìš” : ");
 		coin = scan.nextInt();
 		
-// 3. ÀÚÆÇ±â¸¦ ½ÇÇàÇÑ´Ù.
+// 3. ìíŒê¸°ë¥¼ ì‹¤í–‰í•œë‹¤.
 		while (done) {
 		
 			System.out.println("=================[ Menu ]=================");
-			System.out.println("1.Äİ¶ó(500)  2.»çÀÌ´Ù(700)  3.Ä¿ÇÇ(1000)  4.Á¾·á");
-			System.out.println("============================= ÀÜ¾× : " + (coin) + "¿ø =");
+			System.out.println("1.ì½œë¼(500)  2.ì‚¬ì´ë‹¤(700)  3.ì»¤í”¼(1000)  4.ì¢…ë£Œ");
+			System.out.println("============================= ì”ì•¡ : " + (coin) + "ì› =");
 			
-// 4. À½·á¸¦ ¼±ÅÃÇÑ´Ù.
-			System.out.print("¼±ÅÃÇÏ¼¼¿ä : ");
+// 4. ìŒë£Œë¥¼ ì„ íƒí•œë‹¤.
+			System.out.print("ì„ íƒí•˜ì„¸ìš” : ");
 			num = scan.nextInt();
 			
 			if (num < 4) {
 				if (coin < drinkPrice[num-1]) {	
-					System.out.println("ÀÜ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù ÃæÀüÇÏ½Ã°Ú½À´Ï±î? ¿¹(1) / ¾Æ´Ï¿À(2)");
+					System.out.println("ì”ì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤ ì¶©ì „í•˜ì‹œê² ìŠµë‹ˆê¹Œ? ì˜ˆ(1) / ì•„ë‹ˆì˜¤(2)");
 					choose = scan.nextInt();
 					
 					if (choose == 1) {
-						System.out.print("ÅõÀÔÇÒ ±İ¾×Àº? ");
+						System.out.print("íˆ¬ì…í•  ê¸ˆì•¡ì€? ");
 						coin = coin + scan.nextInt();
 						continue;
 					} else if (choose == 2) {
-						System.out.println("´Ù¸¥À½·á¸¦ ¼±ÅÃÇØÁÖ¼¼¿ä");
+						System.out.println("ë‹¤ë¥¸ìŒë£Œë¥¼ ì„ íƒí•´ì£¼ì„¸ìš”");
 						System.out.println(" ");
 						continue;
 					} else {
-						System.out.println("¿Ã¹Ù¸¥ ¹öÆ°À» ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+						System.out.println("ì˜¬ë°”ë¥¸ ë²„íŠ¼ì„ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 						System.out.println(" ");
 						continue;
 					}
 				}	
 			}
 
-// 5. À½·á°¡ ³ª¿Â´Ù or ÀÜ¾×ÀÌ ºÎÁ·ÇÏ´Ù¸é ´Ù½Ã ¸Ş´º·Î
+// 5. ìŒë£Œê°€ ë‚˜ì˜¨ë‹¤ or ì”ì•¡ì´ ë¶€ì¡±í•˜ë‹¤ë©´ ë‹¤ì‹œ ë©”ë‰´ë¡œ
 			switch (num) {
-				case 1: 	// Äİ¶ó
+				case 1: 	// ì½œë¼
 					if (coin >= drinkPrice[num-1]) {
 						if (drinkGa[num-1] == 0) {
-							System.out.println("¸ÅÁøµÇ¾ú½À´Ï´Ù. ´Ù¸¥À½·á¸¦ ¼±ÅÃÇØÁÖ¼¼¿ä.");
+							System.out.println("ë§¤ì§„ë˜ì—ˆìŠµë‹ˆë‹¤. ë‹¤ë¥¸ìŒë£Œë¥¼ ì„ íƒí•´ì£¼ì„¸ìš”.");
 							break;
 						}
-// 6. ÀÜ¿©°³¼ö¸¦ ³ªÅ¸³»°í (ÇØ´çÀ½·áÀÇ)ÀÜ¾×À» ¹İÈ¯ÇÑ´Ù.
-						System.out.println(drinkName[num-1] + " ³ª¿É´Ï´Ù.");
+// 6. ì”ì—¬ê°œìˆ˜ë¥¼ ë‚˜íƒ€ë‚´ê³  (í•´ë‹¹ìŒë£Œì˜)ì”ì•¡ì„ ë°˜í™˜í•œë‹¤.
+						System.out.println(drinkName[num-1] + " ë‚˜ì˜µë‹ˆë‹¤.");
 						coin = coin - drinkPrice[num-1];
 						drinkGa[num-1] = drinkGa[num-1] - 1;
-						System.out.println("¡Ø³²Àº Àç°í : " + drinkGa[num-1]);
+						System.out.println("â€»ë‚¨ì€ ì¬ê³  : " + drinkGa[num-1]);
 						System.out.println(" ");
 						break;
 					} else {
-						System.out.println("ÀÜ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù.");
-						System.out.println("¡Ø³²Àº Àç°í : " + drinkGa[num-1]);
+						System.out.println("ì”ì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤.");
+						System.out.println("â€»ë‚¨ì€ ì¬ê³  : " + drinkGa[num-1]);
 						System.out.println(" ");
 						break;
 					}
-				case 2:		// »çÀÌ´Ù
+				case 2:		// ì‚¬ì´ë‹¤
 					if (coin >= drinkPrice[num-1]) {
 						if (drinkGa[num-1] == 0) {
-							System.out.println("¸ÅÁøµÇ¾ú½À´Ï´Ù. ´Ù¸¥À½·á¸¦ ¼±ÅÃÇØÁÖ¼¼¿ä.");
+							System.out.println("ë§¤ì§„ë˜ì—ˆìŠµë‹ˆë‹¤. ë‹¤ë¥¸ìŒë£Œë¥¼ ì„ íƒí•´ì£¼ì„¸ìš”.");
 							break;
 						}
-						System.out.println(drinkName[num-1] + " ³ª¿É´Ï´Ù.");
+						System.out.println(drinkName[num-1] + " ë‚˜ì˜µë‹ˆë‹¤.");
 						coin = coin - drinkPrice[num-1];
 						drinkGa[num-1] = drinkGa[num-1] - 1;
-						System.out.println("¡Ø³²Àº Àç°í : " + drinkGa[num-1]);
+						System.out.println("â€»ë‚¨ì€ ì¬ê³  : " + drinkGa[num-1]);
 						System.out.println(" ");
 						break;
 					} else {
-						System.out.println("ÀÜ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù.");
-						System.out.println("¡Ø³²Àº Àç°í : " + drinkGa[num-1]);
+						System.out.println("ì”ì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤.");
+						System.out.println("â€»ë‚¨ì€ ì¬ê³  : " + drinkGa[num-1]);
 						System.out.println(" ");
 						break;
 					}
-				case 3:		// Ä¿ÇÇ
+				case 3:		// ì»¤í”¼
 					if (coin >= drinkPrice[num-1]) {
 						if (drinkGa[num-1] == 0) {
-							System.out.println("¸ÅÁøµÇ¾ú½À´Ï´Ù. ´Ù¸¥À½·á¸¦ ¼±ÅÃÇØÁÖ¼¼¿ä.");
+							System.out.println("ë§¤ì§„ë˜ì—ˆìŠµë‹ˆë‹¤. ë‹¤ë¥¸ìŒë£Œë¥¼ ì„ íƒí•´ì£¼ì„¸ìš”.");
 							break;
 						}
-						System.out.println(drinkName[num-1] + " ³ª¿É´Ï´Ù.");
+						System.out.println(drinkName[num-1] + " ë‚˜ì˜µë‹ˆë‹¤.");
 						coin = coin - drinkPrice[num-1];
 						drinkGa[num-1] = drinkGa[num-1] - 1;
-						System.out.println("¡Ø³²Àº Àç°í : " + drinkGa[num-1]);
+						System.out.println("â€»ë‚¨ì€ ì¬ê³  : " + drinkGa[num-1]);
 						System.out.println(" ");
 						break;
 					} else {
-						System.out.println("ÀÜ¾×ÀÌ ºÎÁ·ÇÕ´Ï´Ù.");
-						System.out.println("¡Ø³²Àº Àç°í : " + drinkGa[num-1]);
+						System.out.println("ì”ì•¡ì´ ë¶€ì¡±í•©ë‹ˆë‹¤.");
+						System.out.println("â€»ë‚¨ì€ ì¬ê³  : " + drinkGa[num-1]);
 						System.out.println(" ");
 						break;
 					}
 				case 4:
-					System.out.println("Á¾·áÇÕ´Ï´Ù.");
+					System.out.println("ì¢…ë£Œí•©ë‹ˆë‹¤.");
 					done = false;
 					break;
 				default:
-					System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù.");
+					System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤.");
 					break;
 			
 			}

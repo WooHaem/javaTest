@@ -6,21 +6,21 @@ public class ExamFunction03 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		// µÎ ¼ö¸¦ Å°º¸µå·Î ÀÔ·Â¹Ş¾Æ¼­ ÇÕ ¸Ş¼Òµå¿¡ °á°ú°ªÀ» ¹Ş¾Æ Ãâ·ÂÇÏ±â
+		// ë‘ ìˆ˜ë¥¼ í‚¤ë³´ë“œë¡œ ì…ë ¥ë°›ì•„ì„œ í•© ë©”ì†Œë“œì— ê²°ê³¼ê°’ì„ ë°›ì•„ ì¶œë ¥í•˜ê¸°
 		int sum=0, n1=0, n2=0;
 		
-		System.out.print("Ã¹¹øÂ° ¼ö : ");
+		System.out.print("ì²«ë²ˆì§¸ ìˆ˜ : ");
 		n1 = scan.nextInt();
-		System.out.print("µÎ¹øÂ° ¼ö : ");
+		System.out.print("ë‘ë²ˆì§¸ ìˆ˜ : ");
 		n2 = scan.nextInt();
 		
 		sum = sumTwo(n1, n2);
-		System.out.print("ÇÕÀº : " + sum);
+		System.out.print("í•©ì€ : " + sum);
 
-	}	// ¸ŞÀÎ ³¡
+	}	// ë©”ì¸ ë
 	
 	static int sumTwo(int n1, int n2) {
-		return n1 + n2;	// return°ª µÚ¿¡´Â Á¶°Ç½ÄÀÇ ÇüÅÂ¸¦ ¾´´Ù.
+		return n1 + n2;	// returnê°’ ë’¤ì—ëŠ” ì¡°ê±´ì‹ì˜ í˜•íƒœë¥¼ ì“´ë‹¤.
 	}
 	
 }

@@ -1,6 +1,6 @@
-/* ±âº»ÀûÀÎ for¹®
- * for(ÃÊ±â°ª; Á¶°Ç; Áõ°¨Ä¡) {
- * 	½ÇÇà¹®
+/* ê¸°ë³¸ì ì¸ forë¬¸
+ * for(ì´ˆê¸°ê°’; ì¡°ê±´; ì¦ê°ì¹˜) {
+ * 	ì‹¤í–‰ë¬¸
  * }
  */
 package kr.co.job.oper;
@@ -12,10 +12,10 @@ public class ForTest01 {
 		int sum = 0;
 		
 		for (i=2; i>=0; i--) {
-			System.out.println("¹İº¹º¯¼ö i°ª : " + i);
-			sum = sum + i;	// ÇÕÀ» ´©Àû => sum += i ¿Í µ¿ÀÏ
+			System.out.println("ë°˜ë³µë³€ìˆ˜ iê°’ : " + i);
+			sum = sum + i;	// í•©ì„ ëˆ„ì  => sum += i ì™€ ë™ì¼
 		}
-		System.out.println("for¹® Á¾·á ÈÄ ¹İº¹º¯¼ö i°ª : " + sum);
+		System.out.println("forë¬¸ ì¢…ë£Œ í›„ ë°˜ë³µë³€ìˆ˜ iê°’ : " + sum);
 
 	}
 

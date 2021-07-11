@@ -6,14 +6,14 @@ public class ForTest04 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-		//¼±¾ð
+		//ì„ ì–¸
 		int dan = 0;
 		
-		//ÀÔ·Â
-		System.out.print("±¸±¸´Ü ¸î´Ü? : ");
+		//ìž…ë ¥
+		System.out.print("êµ¬êµ¬ë‹¨ ëª‡ë‹¨? : ");
 		dan = scan.nextInt();
 		
-		//Ã³¸®
+		//ì²˜ë¦¬
 		for (int i=1; i <=9; i++) {
 			System.out.println(dan + "X" + i + "=" + dan * i);
 		}

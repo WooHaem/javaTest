@@ -10,33 +10,33 @@ public class ArrayTest03 {
 		
 		int[] score = {55, 88, 96, 105, 90, 85, 75, 11, 5};
 		
-		// ÇØ´ç ¹è¿­¿¡¼­ ÃÖ´ë°ª°ú ÃÖ¼Ò°ªÀ» ±¸ÇÏ¼¼¿ä.
+		// í•´ë‹¹ ë°°ì—´ì—ì„œ ìµœëŒ€ê°’ê³¼ ìµœì†Œê°’ì„ êµ¬í•˜ì„¸ìš”.
 		
 		
 		for (int i=0; i<score.length; i++) {
-			min = max;	// ¡Ú¡Ú¡Ú¡Ú¡Ú¡Ú¡Ú¡Ú¡Ú¡Ú¡Ú¡Ú¡Ú¡Ú ÃÖ¼Ò°ªÀÇ º¯¼ö´Â ¹İµå½Ã Á¤ÀÇµÇ¾î¾ßÇÑ´Ù. ( 0ÀÌ µÇ¾úÀ» °æ¿ì ÃÖ´ë°ªÀ» ºÎ¿©ÇÔ.)
+			min = max;	// â˜…â˜…â˜…â˜…â˜…â˜…â˜…â˜…â˜…â˜…â˜…â˜…â˜…â˜… ìµœì†Œê°’ì˜ ë³€ìˆ˜ëŠ” ë°˜ë“œì‹œ ì •ì˜ë˜ì–´ì•¼í•œë‹¤. ( 0ì´ ë˜ì—ˆì„ ê²½ìš° ìµœëŒ€ê°’ì„ ë¶€ì—¬í•¨.)
 			
 			if (max < score[i]) {
 				max = score[i];
 			} else if (min > score[i]) {
-				min = score[i];		// min °ªÀÌ max(ÃÖ´ë°ª)ºÎÅÍ ½ÃÀÛÈÄ °è»êµÈ´Ù
+				min = score[i];		// min ê°’ì´ max(ìµœëŒ€ê°’)ë¶€í„° ì‹œì‘í›„ ê³„ì‚°ëœë‹¤
 			}
 			
 		}
-		System.out.println("ÃÖ´ë°ª : " + max + " / " + "ÃÖ¼Ò°ª : " + min);
+		System.out.println("ìµœëŒ€ê°’ : " + max + " / " + "ìµœì†Œê°’ : " + min);
 		
 		
 		
-		// ÇÕ±¸ÇÏ±â
+		// í•©êµ¬í•˜ê¸°
 		for (int i=0; i<score.length; i++) {
 			sum += score[i];
 		}
-		// Æò±Õ
+		// í‰ê· 
 		avg = (float)sum / score.length;
 		
 		System.out.println("============================");
-		System.out.println("ÃÑÁ¡ : " + sum);
-		System.out.println("Æò±Õ : " + avg);
+		System.out.println("ì´ì  : " + sum);
+		System.out.println("í‰ê·  : " + avg);
 		
 		
 	}

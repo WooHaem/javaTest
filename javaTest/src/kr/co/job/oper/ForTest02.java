@@ -1,5 +1,5 @@
-/* 1. Á¤¼ö¸¦ ÀÔ·Â¹Ş°í
- * 2. 1ºÎÅÍ ÀÔ·Â¹ŞÀº ¼ö±îÁö ¼ø¼­´ë·Î Ãâ·Â
+/* 1. ì •ìˆ˜ë¥¼ ì…ë ¥ë°›ê³ 
+ * 2. 1ë¶€í„° ì…ë ¥ë°›ì€ ìˆ˜ê¹Œì§€ ìˆœì„œëŒ€ë¡œ ì¶œë ¥
  */
 
 package kr.co.job.oper;
@@ -12,13 +12,13 @@ public class ForTest02 {
 		Scanner scan = new Scanner(System.in);
 		int num = 0;
 		
-		System.out.print("¼ıÀÚ ÀÔ·Â : ");
+		System.out.print("ìˆ«ì ì…ë ¥ : ");
 		num = scan.nextInt();
 		
-		//for¹® ÀÛ¼º
+		//forë¬¸ ì‘ì„±
 		
 		for (int i=1; i<=num; i++ ) {
-			System.out.println("ÀÔ·Â¹ŞÀº ¼ıÀÚ±îÁö : " + i);
+			System.out.println("ì…ë ¥ë°›ì€ ìˆ«ìê¹Œì§€ : " + i);
 		}
 		System.out.println("Program End.");
 		scan.close();

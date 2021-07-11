@@ -1,6 +1,6 @@
-/* ÇÁ·Î±×·¥ÀÇ ±âº»Èå¸§±¸Á¶ ¼³°èÇÏ±â (Switch¹® È°¿ë)
- * ==== ¸Þ´º ====
- * 1. µÎ¼öÀÇ ÇÕ 2. ±¸±¸´Ü 3. ÀÔ·Â¹ÞÀº¼ö±îÁöÀÇ ÇÕ  99. Á¾·á
+/* í”„ë¡œê·¸ëž¨ì˜ ê¸°ë³¸íë¦„êµ¬ì¡° ì„¤ê³„í•˜ê¸° (Switchë¬¸ í™œìš©)
+ * ==== ë©”ë‰´ ====
+ * 1. ë‘ìˆ˜ì˜ í•© 2. êµ¬êµ¬ë‹¨ 3. ìž…ë ¥ë°›ì€ìˆ˜ê¹Œì§€ì˜ í•©  99. ì¢…ë£Œ
  * ===============================
  * selct number : 
  */
@@ -19,66 +19,66 @@ public class ControlTest01 {
 		
 		while (done) {
 			System.out.println("==================[ Menu ]=================");
-			System.out.println("1.µÎ¼öÀÇ ÇÕ  2.±¸±¸´Ü  3.ÀÔ·Â¹ÞÀº ¼ö ±îÁöÀÇ ÇÕ  99.Á¾·á");
+			System.out.println("1.ë‘ìˆ˜ì˜ í•©  2.êµ¬êµ¬ë‹¨  3.ìž…ë ¥ë°›ì€ ìˆ˜ ê¹Œì§€ì˜ í•©  99.ì¢…ë£Œ");
 			System.out.println("===========================================");
 			
-			System.out.print("¼±ÅÃÇÏ¼¼¿ä : ");
+			System.out.print("ì„ íƒí•˜ì„¸ìš” : ");
 			num = scan.nextInt();
 			
 		switch (num) {
 		
-// 1. µÎ ¼öÀÇ ÇÕ
+// 1. ë‘ ìˆ˜ì˜ í•©
 		case 1 :
-			//¼±¾ð
+			//ì„ ì–¸
 			int sum1 = 0, sum2 = 0, sum3 = 0;
 			
-			//ÀÔ·Â
-			System.out.print("µÎ ¼öÀÇ ÇÕ(Ã¹¹øÂ°) : ");
+			//ìž…ë ¥
+			System.out.print("ë‘ ìˆ˜ì˜ í•©(ì²«ë²ˆì§¸) : ");
 			sum1 = scan.nextInt();
-			System.out.print("µÎ ¼öÀÇ ÇÕ(µÎ¹øÂ°) : ");
+			System.out.print("ë‘ ìˆ˜ì˜ í•©(ë‘ë²ˆì§¸) : ");
 			sum2 = scan.nextInt();
 			
-			//Ã³¸®
+			//ì²˜ë¦¬
 			sum3 = sum1 + sum2;
-			System.out.println("µÎ ¼öÀÇ ÇÕ : " + sum3);
+			System.out.println("ë‘ ìˆ˜ì˜ í•© : " + sum3);
 			
-			//Á¾·á
+			//ì¢…ë£Œ
 			System.out.println(" ");
 			
-// 2. ±¸±¸´Ü		
+// 2. êµ¬êµ¬ë‹¨		
 		case 2 : 
-			//¼±¾ð
+			//ì„ ì–¸
 			int multiple = 0;
 			
-			//ÀÔ·Â
-			System.out.print("±¸±¸´Ü¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+			//ìž…ë ¥
+			System.out.print("êµ¬êµ¬ë‹¨ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš” : ");
 			multiple = scan.nextInt();
 			
 			if (multiple > 9 || multiple < 2) {
-				System.out.println("¿Ã¹Ù¸¥ ¼ýÀÚ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä. ¸Þ´º·Î µ¹¾Æ°©´Ï´Ù.");
+				System.out.println("ì˜¬ë°”ë¥¸ ìˆ«ìžë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”. ë©”ë‰´ë¡œ ëŒì•„ê°‘ë‹ˆë‹¤.");
 				System.out.println("");
 				break;
 			}
 			
-			//Ã³¸®
+			//ì²˜ë¦¬
 			for (int i=1; i<=9; i++) {
 				System.out.println(multiple + " x " + i + " = " + multiple*i);
 			}
 			
-			//Á¾·á
+			//ì¢…ë£Œ
 			System.out.println(" ");
 			continue;
 			
-// 3. ÀÔ·Â¹ÞÀº ¼ö ±îÁöÀÇ ÇÕ (1ºÎÅÍÀÎÁö?)			
+// 3. ìž…ë ¥ë°›ì€ ìˆ˜ ê¹Œì§€ì˜ í•© (1ë¶€í„°ì¸ì§€?)			
 		case 3 : 
-			//¼±¾ð 
+			//ì„ ì–¸ 
 			int num4 = 0, sum = 0;
 			
-			//ÀÔ·Â
-			System.out.println("¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+			//ìž…ë ¥
+			System.out.println("ìˆ«ìžë¥¼ ìž…ë ¥í•˜ì„¸ìš”.");
 			num4 = scan.nextInt();
 			
-			//Ã³¸®
+			//ì²˜ë¦¬
 			for (int j=1; j<=num4; j++) {
 				sum += j;
 				System.out.print(j);
@@ -91,21 +91,21 @@ public class ControlTest01 {
 			}
 			System.out.println("= " + sum);
 			
-			//Á¾·á
+			//ì¢…ë£Œ
 			System.out.println(" ");
 			continue;
 			
 		case 99 : 
-			System.out.println("Á¾·á.");
+			System.out.println("ì¢…ë£Œ.");
 			done = false;
 			
 		default : 
 			System.out.println(" ");
 		}
 		
-		} //while ³¡
+		} //while ë
 		
-		//Á¾·á
+		//ì¢…ë£Œ
 		System.out.println("Program End.");
 		scan.close();
 		

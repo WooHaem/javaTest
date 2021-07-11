@@ -6,24 +6,24 @@ import java.util.Scanner;
 public class ArrayTest02 {
 
 	public static void main(String[] args) {
-		// ¹®ÀÚ¿­ ¹è¿­ 5°³¸¦ ¼±¾ğÇÑ ÈÄ, 5¸íÀÇ ÀÌ¸§À» ÀÔ·Â¹ŞÀ¸¼¼¿ä
+		// ë¬¸ìì—´ ë°°ì—´ 5ê°œë¥¼ ì„ ì–¸í•œ í›„, 5ëª…ì˜ ì´ë¦„ì„ ì…ë ¥ë°›ìœ¼ì„¸ìš”
 		Scanner scan = new Scanner(System.in);
 		
-		//¼±¾ğ
+		//ì„ ì–¸
 		String[] name;
-		name = new String[5];	// ¡Ú¡Ú¡Ú¡Ú¡Ú¡Ú¡Ú ÇÊ¿äÇÒ ¶§¸¸ ¹è¿­À» »ı¼ºÇÑ´Ù.
+		name = new String[5];	// â˜…â˜…â˜…â˜…â˜…â˜…â˜… í•„ìš”í•  ë•Œë§Œ ë°°ì—´ì„ ìƒì„±í•œë‹¤.
 		
-		//ÀÔ·Â
+		//ì…ë ¥
 		for (int i=0; i<name.length; i++) {
-			System.out.print("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+			System.out.print("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 			name[i] = scan.next();		
 			
 		}
 		
-		// ¹è¿­ ³ª¿­½Ä Ãâ·Â.
+		// ë°°ì—´ ë‚˜ì—´ì‹ ì¶œë ¥.
 		System.out.println(Arrays.toString(name));
 		
-		// ¹è¿­ ÇÏ³ªÇÏ³ª Ãâ·Â.
+		// ë°°ì—´ í•˜ë‚˜í•˜ë‚˜ ì¶œë ¥.
 		for (int i=0; i<name.length; i++) {
 			System.out.println("name [" + i + "] = " + name[i]);
 		}

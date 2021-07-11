@@ -1,4 +1,4 @@
-/* ÇÔ¼ö Áï, ¸Ş¼Òµå¿¡ ´ëÇØ ÀÌÇØÇØº¸±â
+/* í•¨ìˆ˜ ì¦‰, ë©”ì†Œë“œì— ëŒ€í•´ ì´í•´í•´ë³´ê¸°
  * 
  */
 package kr.co.job.func;
@@ -6,58 +6,58 @@ package kr.co.job.func;
 import java.util.Scanner;
 
 public class SwitchTest02 {
-	// Àü¿ªº¯¼ö(global) - staticÀÇ ¿µ¿ªÀ» ¹ş¾î³µ±â ¶§¹®¿¡ ±Û ¸Ç Ã¹¹øÂ°¿¡ staticÀ» ½á¼­ ¸Ş¸ğ¸®¿¡ ¿Ã¸².
-	static Scanner scan = new Scanner(System.in);	// new ... => importÆÄÀÏ ºÒ·¯¿Í¼­ »ı¼º (staticÀÌ¶û ´Ù¸¥ ÇüÅÂ)
+	// ì „ì—­ë³€ìˆ˜(global) - staticì˜ ì˜ì—­ì„ ë²—ì–´ë‚¬ê¸° ë•Œë¬¸ì— ê¸€ ë§¨ ì²«ë²ˆì§¸ì— staticì„ ì¨ì„œ ë©”ëª¨ë¦¬ì— ì˜¬ë¦¼.
+	static Scanner scan = new Scanner(System.in);	// new ... => importíŒŒì¼ ë¶ˆëŸ¬ì™€ì„œ ìƒì„± (staticì´ë‘ ë‹¤ë¥¸ í˜•íƒœ)
 	
 	public static void main(String[] args) {
-		// static(Á¤Àû) : ¸Ş¸ğ¸®¿¡ ·ÎµåµÊ
+		// static(ì •ì ) : ë©”ëª¨ë¦¬ì— ë¡œë“œë¨
 		int num = 1;
 		boolean done = true;
 		
 		while(done) {	
-			//¸Ş´ºÃâ·Â ¹× ¸Ş´ºÀÔ·Â
+			//ë©”ë‰´ì¶œë ¥ ë° ë©”ë‰´ì…ë ¥
 			num = menuPrint();
 			
 			switch (num) {
-			case 1 :	// µÎ ¼öÀÇ ÇÕ
+			case 1 :	// ë‘ ìˆ˜ì˜ í•©
 				sumTest();
 				break;
 			case 2 : 
-				System.out.println("2ÀÔ´Ï´Ù.");
+				System.out.println("2ì…ë‹ˆë‹¤.");
 				break;
 			case 3 :
-				System.out.println("3ÀÔ´Ï´Ù.");
+				System.out.println("3ì…ë‹ˆë‹¤.");
 				break;
 			case 99 :
-				System.out.println("¹İº¹À» Á¾·áÇÕ´Ï´Ù.");
+				System.out.println("ë°˜ë³µì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 				done = false;
-				// return; ´Ù¸¥ ¹æ¹ı (À¥¿ë. ÇÔ¼ö¿ëx)
+				// return; ë‹¤ë¥¸ ë°©ë²• (ì›¹ìš©. í•¨ìˆ˜ìš©x)
 			default :
-				System.out.println("´©±¸³Ä ³Í??");
+				System.out.println("ëˆ„êµ¬ëƒ ë„Œ??");
 				break;
 			}
 		}
 			
-	} // ¸ŞÀÎ ³¡
+	} // ë©”ì¸ ë
 
 	private static void sumTest() {
-		System.out.println("1ÀÔ´Ï´Ù. : ");
+		System.out.println("1ì…ë‹ˆë‹¤. : ");
 		int n1=0, n2=0, sum=0;
 		sum = n1 + n2;
-		System.out.println("ÇÕ ±¸ÇÏ±â ³¡");
+		System.out.println("í•© êµ¬í•˜ê¸° ë");
 		
 	}
 
-	// ¸Ş´º Ãâ·ÂÇÏ´Â ÇÔ¼ö
-	private static int menuPrint() {	// private = Å¬·¡½º ³»¿¡¼­¸¸ »ç¿ë°¡´É
+	// ë©”ë‰´ ì¶œë ¥í•˜ëŠ” í•¨ìˆ˜
+	private static int menuPrint() {	// private = í´ë˜ìŠ¤ ë‚´ì—ì„œë§Œ ì‚¬ìš©ê°€ëŠ¥
 		System.out.println("==========[ Menu ]===========");
-		System.out.println(" 1.    2.    3.    99.   Á¾·á.");
+		System.out.println(" 1.    2.    3.    99.   ì¢…ë£Œ.");
 		System.out.println("=============================");
 		
-		System.out.print("¼ıÀÚ ÀÔ·Â : ");
+		System.out.print("ìˆ«ì ì…ë ¥ : ");
 		
 		return scan.nextInt();
 		
-	} // ÇÔ¼ö ³¡
+	} // í•¨ìˆ˜ ë
 
 }
