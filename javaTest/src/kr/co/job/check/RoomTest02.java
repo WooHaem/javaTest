@@ -1,3 +1,7 @@
+/*
+ * + 숙제 예약 시, 예약자명 이 들어가도록
+ */
+
 package kr.co.job.check;
 
 import java.util.Scanner;
@@ -70,16 +74,16 @@ public class RoomTest02 {
 
 	private static void RoomCancel(int[] room) {	// 예약취소 매서드
 		
-		boolean result = true;
+		boolean result = true;	// 이 boolean변수는 예약취소 매서드가 main밖에 위치해있기 때문에 함수 내에서 초기화를 해주어야함
 		
 		// 배열초과시 에러메세지 탈출코드
-		while (result) {
+		while (result) {	// 반복문 while을 입력해서 조건문 불충족시 바로 아래 번호입력란으로 계속 돌아감
 			System.out.print("예약취소 번호입력 : ");
 			int num = scan.nextInt();
 			
-			if (num > 12) {
+			if (num > 12) {		// 예약취소번호가 배열번호를 초과했을 시
 				System.out.println("잘못된 번호입니다. 다시 입력해주세요.");
-				continue;
+				continue;	// 다시 번호입력(상위)로 이동
 				
 			} else {
 				if (room[num-1] != 0) {						
@@ -92,7 +96,7 @@ public class RoomTest02 {
 					System.out.println("취소불가(이미 공실임)");
 					System.out.println();
 				}
-				result = false;
+				result = false;		// else문의 취소완료 및 불가목록 수행 후 while문 밖으로 이동(초기선택메뉴로)
 			}
 			
 			
@@ -104,15 +108,16 @@ public class RoomTest02 {
 
 	private static void RoomReserve(int[] room) {	// 예약진행 매서드
 		
-		boolean result = true;
+		boolean result = true;	// 이 boolean변수는 예약취소 매서드가 main밖에 위치해있기 때문에 함수 내에서 초기화를 해주어야함
 		
+		// 배열초과시 에러메세지 탈출코드
 		while (result) {	// 반복문 while을 입력해서 안에서 탈출 시 바로 아래 번호입력란으로 계속 돌아감
 			System.out.print("예약객실 번호입력 : ");
 			int num = scan.nextInt();
 			
-			if (num > 12) {
+			if (num > 12) {		// 예약취소번호가 배열번호를 초과했을 시
 				System.out.println("잘못된 번호입니다. 다시 입력해주세요.");
-				continue;
+				continue;	// 다시 번호입력(상위)로 이동
 			} else {
 				if (room[num-1] != 1) {						
 					System.out.println();
@@ -124,7 +129,7 @@ public class RoomTest02 {
 					System.out.println("예약불가(이미 예약됨)");
 					System.out.println();
 				}
-				result = false;	// 해당 함수를 탈출한다.
+				result = false;	// else문의 취소완료 및 불가목록 수행 후 while문 밖으로 이동(초기선택메뉴로)
 			}
 		}
 
