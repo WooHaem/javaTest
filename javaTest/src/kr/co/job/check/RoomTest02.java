@@ -99,7 +99,10 @@ public class RoomTest02 {
 					} else if (choice == 2) {	// 취소진행을 하지 않을 경우
 						System.out.println("상위메뉴로 돌아갑니다.");
 						result = false;	// 해당 예약취소 메뉴를 나감.
-					}			
+					} else {	// ◆◆◆◆◆◆ 디버깅2) 예(1) 아니오(2) 선택 중 1,2가 아닌 다른숫자를 입력했을 경우 = else문으로 해결
+						System.out.println("잘못 누르셨습니다. 예약번호를 다시 확인해주세요.");
+						continue;
+					}
 					
 				} else {
 					System.out.println();
@@ -133,8 +136,18 @@ public class RoomTest02 {
 				if (room[num-1] != 1) {		// 객실이 공실일 경우 다음단계 진행.				
 					System.out.print("성함을 입력해주세요 : ");
 					hostName[num-1] = scan.next();	// 입력된 이름을 hostName 배열 해당 데이터에 저장
-					System.out.print("인원수를 입력하세요 : ");
-					hostNum[num-1] = scan.nextInt();	// 입력된 인원수를 hostNum 배열 해당 데이터에 저장
+					
+					while (result) {	// ◆◆◆◆◆◆ 디버깅1) 인원수를 음의수 (-1,-200)로 입력해도 진행되는 문제 = while문으로 해결
+						System.out.print("인원수를 입력하세요 : ");
+						hostNum[num-1] = scan.nextInt();	// 입력된 인원수를 hostNum 배열 해당 데이터에 저장
+						
+						if (hostNum[num-1] < 1) {
+							System.out.println("최소 한명은 입실하셔야 합니다.");
+							continue;
+						}
+						result = false;
+					}
+					
 					
 					hostCode[num-1] = 1000 + num;	// 예약하려는 호실넘버에 +1000을 하여 네자리의 예약번호 생성. 예) 12호실 = 1000 + 12 = 1012
 					
