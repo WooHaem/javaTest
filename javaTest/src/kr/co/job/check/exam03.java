@@ -2,17 +2,40 @@ package kr.co.job.check;
 
 import java.util.Scanner;
 
-public class ControlTest02 {
+public class exam03 {
 	static Scanner scan = new Scanner(System.in);	
 	
 	public static void main(String[] args) {
 		// 맥도날드
 		
-		String[] burgerName = new String[] {"데리버거", "치즈버거", "1988버거", "상하이스파이스", "빅맥"};
+//		String[] burgerName = new String[] {"데리버거", "치즈버거", "1988버거", "상하이스파이스", "빅맥"};
+//		int[] burgerPrice = new int[] {3000, 5000, 8000, 12000, 15000};
+//		int[] burgerNum = new int[] {10, 8, 6, 4, 2};
 		
-		int[] burgerPrice = new int[] {3000, 5000, 8000, 12000, 15000};
-		int[] burgerNum = new int[] {10, 8, 6, 4, 2};
-	
+//		String[][] burger = new String[3][5];	
+//		burger[0][0] = "데리버거";
+//		burger[0][1] = "치즈버거";
+//		burger[0][2] = "1988버거";
+//		burger[0][3] = "상하이스파이스";
+//		burger[0][4] = "빅맥";
+//		
+//		burger[1][0] = "3000";
+//		burger[1][1] = "5000";
+//		burger[1][2] = "8000";
+//		burger[1][3] = "12000";
+//		burger[1][4] = "15000";
+//		
+//		burger[2][0] = "10";
+//		burger[2][1] = "8";
+//		burger[2][2] = "6";
+//		burger[2][3] = "4";
+//		burger[2][4] = "2";
+		
+		String[][] burger = { 
+			{"데리버거","치즈버거","1988버거","상하이스파이스","빅맥"}, 
+			{"3000", "5000", "8000", "12000", "15000"},
+			{"10", "8", "6", "4", "2"}
+		};	
 		
 		int choice = 0;
 		
@@ -30,7 +53,7 @@ public class ControlTest02 {
 					System.out.println("└─ 주문페이지로 넘어갑니다~");
 					System.out.println();
 					
-					burgerOrder(burgerName, burgerPrice, burgerNum);
+					burgerOrder(burger);
 					
 					break;
 					
@@ -38,7 +61,7 @@ public class ControlTest02 {
 					System.out.println("└─ 주문취소페이지로로 넘어갑니다~");
 					System.out.println();
 					
-					burgerCancel(burgerName, burgerPrice, burgerNum);
+					burgerCancel(burger);
 					break;
 					
 				case 3:
@@ -62,14 +85,14 @@ public class ControlTest02 {
 		}
 	}
 
-	private static void burgerCancel(String[] burgerName, int[] burgerPrice, int[] burgerNum) {
+	private static void burgerCancel(String[] burger) {
 		boolean done = true;
 		
 		
 		
 	}
 
-	private static void burgerOrder(String[] burgerName, int[] burgerPrice, int[] burgerNum) {
+	private static void burgerOrder(String[] burger) {
 		boolean done = true;
 		
 		while (done) {
@@ -82,11 +105,11 @@ public class ControlTest02 {
 			
 			switch (choice) {
 				case 1:
-					if (burgerNum[choice-1] > 0) {
-						Proceed1(burgerName, burgerPrice, burgerNum, choice);
+					if (Integer.parseInt(burger[2][choice-1]) > 0) {
+						Proceed1(burger, choice);
 			
 					} else { 
-						System.out.println("!! 현재 " + burgerName[choice-1] + "는 매진되었습니다.");
+						System.out.println("!! 현재 " + burger[0][choice-1] + "는 매진되었습니다.");
 						System.out.println();
 						
 					}

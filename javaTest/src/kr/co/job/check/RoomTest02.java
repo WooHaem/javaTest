@@ -16,6 +16,13 @@ public class RoomTest02 {
 		int[] room = new int[12];				// 방 개수
 		int[] hostNum = new int[12];			// 인원
 		int[] hostCode = new int[12];			// 예약번호
+		
+		//int[][] room = new int[3][12]
+		// room.length  => 3
+		// room[0].length ==>12   // 방 개수
+		// room[1].length ==>12   // 인원
+		// room[2].length ==>12   // 예약번호
+		
 		String[] hostName = new String[12];		// 예약자명
 		
 		int num = 0;	// 버튼선택 토글
