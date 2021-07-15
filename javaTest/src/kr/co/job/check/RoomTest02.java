@@ -17,7 +17,7 @@ public class RoomTest02 {
 		int[] hostNum = new int[12];			// 인원
 		int[] hostCode = new int[12];			// 예약번호
 		
-		//int[][] room = new int[3][12]
+		// int[][] room = new int[3][12] => [행][열]
 		// room.length  => 3
 		// room[0].length ==>12   // 방 개수
 		// room[1].length ==>12   // 인원
