@@ -22,6 +22,8 @@
  *    }
  * }
  */
+
+
 package kr.co.job.chap6;
 
 public class AccountTest01 {
@@ -37,11 +39,24 @@ public class AccountTest01 {
 		// 오천원 출금
 		obj.withdraw(5000);
 		
+//		System.out.println("예금주명 : " + obj.name);
+//		System.out.println("계좌번호 : " + obj.accNo);		
+//		System.out.println("잔액 : " + obj.balance);
+		printAccount(obj);
+		
+		
+		
+		// 은행계좌 생성시 이름을 주고싶다.
+		Account obj2 = new Account("장길산");
+		// obj2.name = "장길산";
+		Account obj3 = new Account("총", "23-312-321-2", 100);		// 
+
+	}
+
+	private static void printAccount(Account obj) {
 		System.out.println("예금주명 : " + obj.name);
 		System.out.println("계좌번호 : " + obj.accNo);		
 		System.out.println("잔액 : " + obj.balance);
-		
-
 	}
 
 }
