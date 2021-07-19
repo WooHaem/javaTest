@@ -8,7 +8,7 @@ public class Test01 {
 
 		System.out.println("x:" + x + " y:" + y);
 		
-		int test = 100;
+		int test = 1000;
 		
 		tmp = x;
 		x = y;
