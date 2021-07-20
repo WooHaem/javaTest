@@ -14,6 +14,17 @@ public class StudentTest {
 		
 		stu.setMajor("회화");
 		System.out.println("당식의 학과 : " + stu.getMajor());
+		
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			System.out.println("예외발생");
+			e.printStackTrace();
+		}
+		
+		System.out.println("1초후 출력됨.");
 
 		
 	}
