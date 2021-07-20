@@ -71,7 +71,7 @@ public class AccountTest01 {
       MinusAccount obj4 = new MinusAccount("마이너스", "110-333-598299", 7000, 1000000);	// obj4는 인스턴스
       obj4.withdraw(10000);
       printAccount(obj4);
-      System.out.println("==========================");
+      System.out.println("=========================");
     
       
 
