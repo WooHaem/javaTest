@@ -60,9 +60,10 @@ public class Account {
    }
    
    int withdraw(int amount) throws Exception { //출금한다.
-      if(balance<amount)
+      if(balance<amount) {
          //return 0; //잔액이 부족하면 0을 리턴
          throw new Exception("잔액이 부족합니다."); // 예외를발생시키기 "잔액이 부족합니다." 상단에 throws Exception 추가
+      }
       balance -= amount;
       return amount;
    }

@@ -56,15 +56,24 @@ public class AccountTest01 {
       System.out.println("예금주명 : " + obj.name);
       System.out.println("계좌번호 : " + obj.accNo);
       System.out.println("잔액 " + obj.balance);
-      
+      System.out.println("==========================");
       //은행계좌 생성시 이름을 주고싶다ㅓ
       Account obj2 = new Account("장길산");
       //   obj2.name = "장길산";
       System.out.println(obj2.name);
+      System.out.println("==========================");
       
       Account obj3 = new Account("임걱정", "910-3004-3156", 1000000000);
       //System.out.println(obj3.name +", "+ obj3.accNo +", "+ obj3.balance);
       printAccount(obj3);
+      System.out.println("==========================");
+      
+      MinusAccount obj4 = new MinusAccount("마이너스", "110-333-598299", 7000, 1000000);	// obj4는 인스턴스
+      obj4.withdraw(10000);
+      printAccount(obj4);
+      System.out.println("==========================");
+    
+      
 
    }
    private static void printAccount(Account obj) {
