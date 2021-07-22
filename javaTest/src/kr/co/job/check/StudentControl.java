@@ -53,9 +53,7 @@ public class StudentControl {
 	void studentPlay(String sel) {
 		//"1.추가, 2. 수정, 3.삭제, 4 보기, 기타. 종료"
 		menuView();
-		while () {
-			
-		}
+
 		
 	}// end of void studentPlay(String sel)
 
@@ -83,9 +81,9 @@ public class StudentControl {
 	// 수정메소드 updateStudent(int index)
 	// 1.이름수정 2. 나이수정 3. 학번수정 4. 전공수정
 	
-	boolean updateStudent(int index) {
-
-	}
+//	boolean updateStudent(int index) {
+//
+//	}
 	
 
 	//삭제메소드
