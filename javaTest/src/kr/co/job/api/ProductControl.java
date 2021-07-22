@@ -7,10 +7,12 @@
  */
 package kr.co.job.api;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ProductControl {
 	static Scanner scan = new Scanner(System.in);
+	ArrayList<Product> list = new ArrayList<>();
 
 	public static void main(String[] args) {
 		Product p1 = new Product(); // 인스턴스 생성
